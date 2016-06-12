@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>inserta nuevos datos</title>
+  <script type="text/javascript" src="http://kozea.github.com/pygal.js/javascripts/svg.jquery.js"></script>
+  <script type="text/javascript" src="http://kozea.github.com/pygal.js/javascripts/pygal-tooltips.js"></script>
+  </head>
+  <body>
+    <form action="" method="post" name="search">
+      <p>
+        {{form.data_field.label}}:<br>
+        {{ form.data_field(cols=80, rows=20) }}<br>
+        <input type="submit" value="Insert">
+      </p>
+    </form>
+  </body>
+</html>
