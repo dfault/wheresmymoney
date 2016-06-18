@@ -36,7 +36,7 @@ def search():
     pie = plotter.PiePlotter(title)
 
     pie.add_list(read.get_total_ratio(date_start, date_end))
-    return render_template('index.html', title=pie.title, chart=pie, form=form)
+    return render_template('search.html', title=pie.title, chart=pie, form=form)
 
 
 @app.route('/insert', methods=['GET', 'POST'])
